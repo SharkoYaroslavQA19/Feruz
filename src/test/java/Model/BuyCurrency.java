@@ -1,5 +1,14 @@
 package Model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class BuyCurrency {
 
     private String branch;
@@ -18,7 +27,7 @@ public class BuyCurrency {
     private String purpose_detail;
     private Integer oper_id;
     private String bank;
-    private Integer request_id;
+    private Long request_id;
     private String request_timestamp;
     private Integer message_id;
 
