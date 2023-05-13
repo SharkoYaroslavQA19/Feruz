@@ -1,56 +1,58 @@
 package TestFeruz;
 
-import DataBase.DataForTheRequest;
-import Model.BuyCurrency;
+import Model.RequestFeruzBuy;
+import Model.ResponseFeruzAll;
 import Specification.Specification;
-import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static UtilsRequest.DataRequestBuy.*;
+import static UtilsResponse.DataResponseBuy.responseBuy;
 import static io.restassured.RestAssured.given;
 
 public class BuyCurrencyTest {
-    @Test(groups = {"feruz"})
+
+    private final static String ENDPOINT = "buyCurrency";
+
+    @Test
     public void buyCurrencyTest(){
-        Specification.installSpecification(Specification.requestSpecification());
-        BuyCurrency buyCurrency = DataForTheRequest.getBuyCurrency();
-        Response response = given()
-                .body(buyCurrency).log().all()
+        Specification.installSpecification(Specification.requestSpecification(),Specification.responseSpecification(200));
+        RequestFeruzBuy buyCurrency = postBuyCurrency();
+        ResponseFeruzAll responseFeruzAll = given()
+                .body(buyCurrency)
                 .when()
-                .post("buyCurrency")
-                .then().log().all()
-                .extract().response();
-        Assert.assertEquals(200,response.getStatusCode());
+                .post(ENDPOINT)
+                .then()
+                .extract().as(ResponseFeruzAll.class);
+        Assert.assertEquals(responseBuy(), responseFeruzAll);
 
     }
 
-    @Test(groups = {"feruz"})
+    @Test
     public void buyCurrencyNotContractTest(){
-        Specification.installSpecification(Specification.requestSpecification());
-        BuyCurrency buyCurrency = DataForTheRequest.getBuyCurrencyNotContract();
-        Response response = given()
-                .body(buyCurrency).log().all()
+        Specification.installSpecification(Specification.requestSpecification(),Specification.responseSpecification(200));
+        RequestFeruzBuy buyCurrency = postBuyCurrencyNotContract();
+        ResponseFeruzAll responseFeruzAll = given()
+                .body(buyCurrency)
                 .when()
-                .post("buyCurrency")
-                .then().log().all()
-                .extract().response();
-        Assert.assertEquals(200,response.getStatusCode());
+                .post(ENDPOINT)
+                .then()
+                .extract().as(ResponseFeruzAll.class);
+        Assert.assertEquals(responseBuy(), responseFeruzAll);
 
     }
 
-    @Test(groups = {"feruz"})
+    @Test
     public void buyCurrencyExTest(){
-        Specification.installSpecification(Specification.requestSpecification());
-        BuyCurrency buyCurrency = DataForTheRequest.getBuyCurrencyEx();
-        Response response = given()
-                .body(buyCurrency).log().all()
+        Specification.installSpecification(Specification.requestSpecification(),Specification.responseSpecification(200));
+        RequestFeruzBuy buyCurrency = postBuyCurrencyEx();
+        ResponseFeruzAll responseFeruzAll =  given()
+                .body(buyCurrency)
                 .when()
-                .post("buyCurrency")
-                .then().log().all()
-                .extract().response();
-        Assert.assertEquals(200,response.getStatusCode());
-        Assert.assertEquals("40000",response.path("error"));
-        Assert.assertEquals("12345678901234",response.path("request_id"));
-        Assert.assertEquals("Validation error.",response.path("message"));
+                .post(ENDPOINT)
+                .then()
+                .extract().as(ResponseFeruzAll.class);
+        Assert.assertEquals(responseBuy(), responseFeruzAll);
 
     }
 }

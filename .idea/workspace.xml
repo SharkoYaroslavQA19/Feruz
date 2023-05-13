@@ -4,18 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b08b9b6-feea-40b1-9ed9-8b0a5baa5a35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DataBase/DataForTheRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Model/BuyCurrency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Specification/Specification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestFeruz/BuyCurrencyTest.java" afterDir="false" />
+    <list default="true" id="1b08b9b6-feea-40b1-9ed9-8b0a5baa5a35" name="Changes" comment="Change 1">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Model/RequestFeruzInterBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Model/RequestFeruzSale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Model/ResponseFeruzAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestFeruz/BuyCurrencyInterbankBuyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestFeruz/SaleCurrencyInterBankSaleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestFeruz/SaleCurrencyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UtilsRequest/DataRequestFeruzInterBankBuy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UtilsRequest/DataRequestFeruzInterBankSale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UtilsRequest/DataRequestSale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UtilsResponse/DataResponseBuy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UtilsResponse/DataResponseInterBankBuy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UtilsResponse/DataResponseInterBankSale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UtilsResponse/DataResponseSale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DataBase/DataForTheRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilsRequest/DataRequestBuy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Model/BuyCurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/RequestFeruzBuy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Specification/Specification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Specification/Specification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestFeruz/BuyCurrencyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestFeruz/BuyCurrencyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,23 +56,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.BuyCurrencyTest.buyCurrencyExTest">
-    <configuration name="BuyCurrencyTest" type="TestNG" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="DataBase" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SaleCurrencyTest.saleCurrencyTest">
+    <configuration name="BuyCurrencyInterbankBuyTest.InterBankBuy" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Feruz" />
       <extension name="coverage">
         <pattern>
@@ -71,25 +86,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestFeruz" />
-      <option name="MAIN_CLASS_NAME" value="TestFeruz.BuyCurrencyTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BuyCurrencyTest.buyCurrency" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Feruz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TestFeruz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TestFeruz" />
-      <option name="MAIN_CLASS_NAME" value="TestFeruz.BuyCurrencyTest" />
-      <option name="METHOD_NAME" value="buyCurrency" />
+      <option name="MAIN_CLASS_NAME" value="TestFeruz.BuyCurrencyInterbankBuyTest" />
+      <option name="METHOD_NAME" value="InterBankBuy" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -97,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuyCurrencyTest.buyCurrencyExTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BuyCurrencyTest.buyCurrencyNotContractTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Feruz" />
       <extension name="coverage">
         <pattern>
@@ -107,7 +105,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="TestFeruz" />
       <option name="MAIN_CLASS_NAME" value="TestFeruz.BuyCurrencyTest" />
-      <option name="METHOD_NAME" value="buyCurrencyExTest" />
+      <option name="METHOD_NAME" value="buyCurrencyNotContractTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -115,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFeruz" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BuyCurrencyTest.buyCurrencyTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Feruz" />
       <extension name="coverage">
         <pattern>
@@ -124,7 +122,45 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestFeruz" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="MAIN_CLASS_NAME" value="TestFeruz.BuyCurrencyTest" />
+      <option name="METHOD_NAME" value="buyCurrencyTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaleCurrencyInterBankSaleTest.InterBankSaleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Feruz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestFeruz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestFeruz" />
+      <option name="MAIN_CLASS_NAME" value="TestFeruz.SaleCurrencyInterBankSaleTest" />
+      <option name="METHOD_NAME" value="InterBankSaleTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaleCurrencyTest.saleCurrencyTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Feruz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestFeruz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestFeruz" />
+      <option name="MAIN_CLASS_NAME" value="TestFeruz.SaleCurrencyTest" />
+      <option name="METHOD_NAME" value="saleCurrencyTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -133,10 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BuyCurrencyTest.buyCurrencyExTest" />
-        <item itemvalue="TestNG.TestFeruz" />
-        <item itemvalue="TestNG.BuyCurrencyTest" />
-        <item itemvalue="TestNG.BuyCurrencyTest.buyCurrency" />
+        <item itemvalue="TestNG.SaleCurrencyTest.saleCurrencyTest" />
+        <item itemvalue="TestNG.BuyCurrencyTest.buyCurrencyTest" />
+        <item itemvalue="TestNG.BuyCurrencyInterbankBuyTest.InterBankBuy" />
+        <item itemvalue="TestNG.BuyCurrencyTest.buyCurrencyNotContractTest" />
+        <item itemvalue="TestNG.SaleCurrencyInterBankSaleTest.InterBankSaleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -148,11 +185,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683286554992</updated>
-      <workItem from="1683286556207" duration="8095000" />
+      <workItem from="1683286556207" duration="10854000" />
+      <workItem from="1683705782763" duration="18528000" />
+      <workItem from="1683802282885" duration="64000" />
+      <workItem from="1683809762901" duration="2085000" />
+      <workItem from="1683812204049" duration="7000" />
+      <workItem from="1683813134965" duration="3113000" />
+      <workItem from="1683816493144" duration="12411000" />
+      <workItem from="1683979966723" duration="5948000" />
     </task>
+    <task id="LOCAL-00001" summary="Change 1">
+      <created>1683298383317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683298383317</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Change 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change 1" />
   </component>
 </project>

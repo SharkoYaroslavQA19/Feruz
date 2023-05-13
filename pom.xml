@@ -7,9 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>Feruz</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <dependencies>
-
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
@@ -21,12 +19,6 @@
             <artifactId>testng</artifactId>
             <version>7.7.0</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.26</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -51,7 +43,6 @@
         <testNgVersion>7.7.0</testNgVersion>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <suiteXmlFile>allTest.xml</suiteXmlFile>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -61,11 +52,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
-                <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
-                    </suiteXmlFiles>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>io.qameta.allure</groupId>
